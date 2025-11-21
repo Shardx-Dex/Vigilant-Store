@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mackenzide Store 🛒</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://mackenzidestore.wordpress.com/wp-content/uploads/2025/11/cropped-aww.jpg?w=138&h=138" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-left">
+      <img src="https://mackenzidestore.wordpress.com/wp-content/uploads/2025/11/cropped-aww.jpg?w=138&h=138" alt="logo" class="logo">
+      <span>mackenzide Store</span>
+    </div>
+
+    <!-- Menú hamburguesa -->
+    <nav class="dropdown" aria-label="Navegación principal">
+      <button class="menu-icon" id="menu-btn" aria-expanded="false" aria-controls="menu-content" aria-label="Abrir menú">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <div class="dropdown-content" id="menu-content" role="menu">
+        <a href="indie.html" role="menuitem">Inicio</a>
+        <a href="indie.html" role="menuitem">Catálogo</a>
+        <a href="indie.html" role="menuitem">Buscar</a>
+        <hr class="menu-sep">
+        <a href="catalogo.html" role="menuitem">Pedir un juego</a>
+        <a href="noticias.html" role="menuitem">Noticias</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Título principal -->
+  <section class="hero">
+    <h1>mackenzide Store</h1>
+    <p>
+      Bienvenido a tu tienda Online Favorita! todos nuestros productos son 100% y baratos,
+      puedes elegir qué llevar y pago rápido a uno de nuestros empleados disponibles
+    </p>
+    <a href="catalogo.html" class="btn">Ver Catálogo</a>
+
+    <div class="hero-image">
+      <img src="https://mackenzidestore.wordpress.com/wp-content/uploads/2025/11/1a8be19fe1a38c74752a91e837f805ec.jpg?w=1440" alt="anime girl" />
+    </div>
+  </section>
+
+  <!-- Sección ¿Por dónde empezar? -->
+  <section class="section">
+    <div class="separator">*</div>
+    <h2>¿Por donde empezar?</h2>
+    <p>¡Ofrecemos Todos estos!</p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Juegos Para Pc</h3>
+        <p>Tus Juegos Favoritos Para Pc</p>
+      </div>
+      <div class="card">
+        <h3>Juegos Para Móvil</h3>
+        <p>Algún juego divertido de móvil que desearías probar? pues vente!</p>
+      </div>
+      <div class="card">
+        <h3>Juegos PS2, PSVITA, GBA</h3>
+        <p>¿Emulador que deseas probar? Pues éntrale!</p>
+      </div>
+      <div class="card">
+        <h3>PDF’s And Manager</h3>
+        <p>Cualquier comic o manga en formato “PDF’s”, “zip/rar”, “cbr”.</p>
+      </div>
+      <div class="card">
+        <h3>HTML + CSS AND JS</h3>
+        <p>Creación de Páginas Web como esta vía “Html + css” y hasta en “JavaScript/js”.</p>
+      </div>
+      <div class="card">
+        <h3>Solicitud</h3>
+        <p>¿Algo que no encuentras? Bueno! Pues ordénanos, que no notros lo obtendremos para su compra</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Métodos de compra -->
+  <section class="section">
+    <div class="separator">*</div>
+    <h2>Metodos de Compra</h2>
+    <p>¿Como Se compra en <strong>“mackenzide Store”</strong>?</p>
+
+    <div class="purchase">
+      <div class="purchase-text">
+        <h3>Realización de pagos</h3>
+        <ul>
+          <li>Busque Su contenido favorito, vea especificaciones</li>
+          <li>Cuando decida que comprar dele a “Realizar Compra”</li>
+          <li>Complete datos mínimos necesarios y disfrute!</li>
+        </ul>
+      </div>
+      <div class="purchase-img">
+        <img src="https://honeysanime.com/wp-content/uploads/2016/08/New-Game-wallpaper-20160815034724-604x500.jpg" alt="New Game anime" />
+      </div>
+    </div>
+
+    <div class="purchase">
+      <div class="purchase-img">
+        <img src="https://img.anmosugoi.com/file/media-sugoi/2021/07/animacion.jpeg" alt="anime money" />
+      </div>
+      <div class="purchase-text">
+        <h3>Metodos de Pagos</h3>
+        <ul>
+          <li>Mercado Pago</li>
+          <li>Cualquier método que acepte MP</li>
+          <li>(No necesitar crear una cuenta en “mackenzide Store” para comprar)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Agradecimiento -->
+  <section class="thank">
+    <blockquote>“Gracias por Su Compra.”</blockquote>
+    <div class="profile">
+      <img src="https://i.pinimg.com/736x/9b/8e/ae/9b8eae73db4f223b6a428da86bb8318b.jpg" alt="perfil" />
+      <p>mackenzide</p>
+    </div>
+  </section>
+
+  <!-- Twitter -->
+  <section class="twitter">
+    <h2>Visita Nuestro Twitter Oficial</h2>
+    <p>¡Síguenos!</p>
+    <a href="#" class="btn-black">Seguir</a>
+  </section>
+
+  <!-- Script: abrir/cerrar menú -->
+  <script>
+    (function () {
+      const menuBtn = document.getElementById("menu-btn");
+      const menuContent = document.getElementById("menu-content");
+
+      menuBtn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        const opened = menuContent.classList.toggle("show");
+        menuBtn.classList.toggle("active", opened);
+        menuBtn.setAttribute("aria-expanded", opened ? "true" : "false");
+      });
+
+      window.addEventListener("click", function (e) {
+        if (!menuContent.contains(e.target) && e.target !== menuBtn) {
+          menuContent.classList.remove("show");
+          menuBtn.classList.remove("active");
+          menuBtn.setAttribute("aria-expanded", "false");
+        }
+      });
+
+      window.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          menuContent.classList.remove("show");
+          menuBtn.classList.remove("active");
+          menuBtn.setAttribute("aria-expanded", "false");
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
